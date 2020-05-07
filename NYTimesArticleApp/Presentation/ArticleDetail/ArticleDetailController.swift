@@ -23,6 +23,7 @@ class ArticleDetailController: UIViewController {
 
     setBarAppearance(.white)
     adapter = ArticleDetailAdapter(tableView: tableView, article: presenter.article)
+    adapter.delegate = self
 
     presenter.isArticleSaved.observeOn(MainScheduler.instance).subscribe(onNext: { [weak self] isSaved in
       guard let `self` = self else { return }
