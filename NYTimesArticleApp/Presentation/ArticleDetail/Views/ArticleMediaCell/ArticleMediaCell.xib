@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ArticleMediaCell" rowHeight="263" id="7a5-P7-lGk" customClass="ArticleMediaCell" customModule="NYTimesArticleApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="263"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7a5-P7-lGk" id="E0j-4w-yeL">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="263"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rfx-0B-Mvi">
+                        <rect key="frame" x="33" y="10" width="348" height="194"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="194" id="KXJ-o8-LCe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvb-vV-mkt">
+                        <rect key="frame" x="190" y="214" width="34.5" height="27"/>
+                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zvb-vV-mkt" firstAttribute="top" secondItem="rfx-0B-Mvi" secondAttribute="bottom" constant="10" id="8WH-ea-GIu"/>
+                    <constraint firstItem="rfx-0B-Mvi" firstAttribute="centerX" secondItem="E0j-4w-yeL" secondAttribute="centerX" id="A6p-gB-1BJ"/>
+                    <constraint firstItem="Zvb-vV-mkt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="E0j-4w-yeL" secondAttribute="leading" constant="25" id="IWG-KG-RRg"/>
+                    <constraint firstItem="Zvb-vV-mkt" firstAttribute="centerX" secondItem="E0j-4w-yeL" secondAttribute="centerX" id="JBr-I0-eFu"/>
+                    <constraint firstItem="rfx-0B-Mvi" firstAttribute="leading" secondItem="E0j-4w-yeL" secondAttribute="leading" constant="33" id="PZz-ba-ca9"/>
+                    <constraint firstAttribute="bottom" secondItem="Zvb-vV-mkt" secondAttribute="bottom" constant="22" id="WLg-EA-gfX"/>
+                    <constraint firstItem="rfx-0B-Mvi" firstAttribute="top" secondItem="E0j-4w-yeL" secondAttribute="top" constant="10" id="uTr-Ad-pyC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="captionLabel" destination="Zvb-vV-mkt" id="XhY-8i-tWU"/>
+                <outlet property="imageHeightConstraint" destination="KXJ-o8-LCe" id="YG5-tI-Jsf"/>
+                <outlet property="mediaImageView" destination="rfx-0B-Mvi" id="CRQ-rn-3dB"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="146.98660714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

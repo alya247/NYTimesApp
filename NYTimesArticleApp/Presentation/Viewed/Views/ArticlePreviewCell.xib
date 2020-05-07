@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ArticlePreviewCell" rowHeight="128" id="AdQ-O9-Yvu" customClass="ArticlePreviewCell" customModule="NYTimesArticleApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AdQ-O9-Yvu" id="KZO-jm-7xn">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXi-Oq-sGv">
+                        <rect key="frame" x="12" y="6" width="365" height="116"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Leader We Wish We All Had" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnG-Ng-nLC">
+                                <rect key="frame" x="10" y="10" width="241.5" height="19"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opinion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4N-cb-agg">
+                                <rect key="frame" x="10" y="32" width="39.5" height="13.5"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A look at the style of Dr. Amy Acton, who has earned praise for her daily briefings on the pandemic." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JT-CK-uEc">
+                                <rect key="frame" x="10" y="50.5" width="345" height="33.5"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-05-05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JQ-xp-gb0">
+                                <rect key="frame" x="292" y="10" width="65" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Jh1-XU-VPk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4JT-CK-uEc" firstAttribute="top" secondItem="K4N-cb-agg" secondAttribute="bottom" constant="5" id="EC8-5V-ZlM"/>
+                            <constraint firstItem="K4N-cb-agg" firstAttribute="leading" secondItem="BXi-Oq-sGv" secondAttribute="leading" constant="10" id="GzN-ou-zeJ"/>
+                            <constraint firstAttribute="trailing" secondItem="5JQ-xp-gb0" secondAttribute="trailing" constant="8" id="J7C-Ld-FvT"/>
+                            <constraint firstItem="5JQ-xp-gb0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnG-Ng-nLC" secondAttribute="trailing" constant="10" id="NoX-g1-JUh"/>
+                            <constraint firstItem="K4N-cb-agg" firstAttribute="top" secondItem="fnG-Ng-nLC" secondAttribute="bottom" constant="3" id="PYe-ZB-chv"/>
+                            <constraint firstItem="5JQ-xp-gb0" firstAttribute="top" secondItem="BXi-Oq-sGv" secondAttribute="top" constant="10" id="Rn8-dP-pAR"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4JT-CK-uEc" secondAttribute="bottom" constant="8" id="bkS-8U-SKz"/>
+                            <constraint firstItem="fnG-Ng-nLC" firstAttribute="leading" secondItem="BXi-Oq-sGv" secondAttribute="leading" constant="10" id="cRc-iU-u52"/>
+                            <constraint firstAttribute="trailing" secondItem="4JT-CK-uEc" secondAttribute="trailing" constant="10" id="dsO-hD-OR9"/>
+                            <constraint firstItem="4JT-CK-uEc" firstAttribute="leading" secondItem="BXi-Oq-sGv" secondAttribute="leading" constant="10" id="gmc-wW-jya"/>
+                            <constraint firstItem="fnG-Ng-nLC" firstAttribute="top" secondItem="BXi-Oq-sGv" secondAttribute="top" constant="10" id="pBX-5Z-Gww"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="BXi-Oq-sGv" firstAttribute="leading" secondItem="KZO-jm-7xn" secondAttribute="leading" constant="12" id="5sB-3D-biE"/>
+                    <constraint firstAttribute="trailing" secondItem="BXi-Oq-sGv" secondAttribute="trailing" constant="12" id="UcM-HP-uIV"/>
+                    <constraint firstAttribute="bottom" secondItem="BXi-Oq-sGv" secondAttribute="bottom" constant="6" id="Zjb-ip-Coz"/>
+                    <constraint firstItem="BXi-Oq-sGv" firstAttribute="top" secondItem="KZO-jm-7xn" secondAttribute="top" constant="6" id="sqq-nJ-2KW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="abstractLabel" destination="4JT-CK-uEc" id="OHi-YN-6wp"/>
+                <outlet property="dateLabel" destination="5JQ-xp-gb0" id="RmB-By-MrO"/>
+                <outlet property="sectionLabel" destination="K4N-cb-agg" id="5HX-an-Qdx"/>
+                <outlet property="titleLabel" destination="fnG-Ng-nLC" id="59h-q1-SAC"/>
+            </connections>
+            <point key="canvasLocation" x="-60.14492753623189" y="129.91071428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
